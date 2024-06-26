@@ -1,0 +1,86 @@
+/* Import Fira Code font */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+
+/* Define CSS variables */
+:root {
+    --color-light-gray: #cdcdcd;
+    --color-dark-background: #141414;
+    --color-green: #00ff00;
+    --color-dark-green: #157a15;
+    --color-gray: #888;
+}
+
+/* Body styles */
+body {
+    color: var(--color-light-gray);
+    background-color: var(--color-dark-background);
+    max-width: max-content;
+    margin: 100px auto;
+    font-family: 'Fira Code', monospace;
+}
+
+/* Logo styles */
+.logo {
+    text-align: center;
+    font-size: 11px;
+    color: var(--color-green);
+}
+
+.logo pre {
+    font-family: terminal;
+}
+
+/* Menu styles */
+.menu {
+    border-bottom: 2px dotted var(--color-dark-green);
+    font-size: 14px;
+    text-align: center;
+    padding: 2px 0;
+    font-family: terminal;
+}
+
+.menu a {
+    color: var(--color-green);
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: var(--color-light-gray);
+}
+
+/* Body styles */
+.body {
+    font-family: terminal;
+    font-size: 15px;
+}
+
+.body pre {
+    font-family: terminal;
+    color: var(--color-dark-green);
+}
+
+.body g1 {
+    color: var(--color-green);
+    font-weight: bold;
+}
+
+.body g2 {
+    color: var(--color-gray);
+}
+
+.body a {
+    text-decoration: none;
+    color: var(--color-green);
+}
+
+/* Footer styles */
+.footer {
+    border-top: 2px dotted var(--color-dark-green);
+    font-size: 13px;
+    text-align: center;
+    padding: 2px 0;
+    font-family: terminal;
+    color: var(--color-green);
+    font-weight: bold;
+}
