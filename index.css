@@ -1,43 +1,61 @@
-/* Import Fira Code font */
-@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-/* Define CSS variables */
 :root {
     --color-light-gray: #cdcdcd;
     --color-dark-background: #141414;
     --color-green: #00ff00;
     --color-dark-green: #157a15;
     --color-gray: #888;
+    font-family: 'Times New Roman', Times, serif;
 }
 
-/* Body styles */
+.container {
+    padding: 0 300px;
+}
+
 body {
     color: var(--color-light-gray);
     background-color: var(--color-dark-background);
-    max-width: max-content;
-    margin: 100px auto;
-    font-family: 'Fira Code', monospace;
+    margin: 50px 100px 0px 100px;
 }
 
-/* Logo styles */
 .logo {
     text-align: center;
-    font-size: 11px;
+    font-size: 9px;
     color: var(--color-green);
 }
 
-.logo pre {
-    font-family: terminal;
-}
-
-/* Menu styles */
 .menu {
     border-bottom: 2px dotted var(--color-dark-green);
     font-size: 14px;
     text-align: center;
-    padding: 2px 0;
-    font-family: terminal;
+    padding: 5px 0;
 }
+
+@media (max-width: 600px) {
+    body {
+      margin: 50px 10px 0px 10px;
+    }
+    .body pre {
+        font-size: 12px;
+    }
+    .container {
+      padding: 0 25px;
+    }
+    .logo {
+      font-size: 3px;
+    }
+    .menu {
+        font-size: 13px;
+        margin: 15px 0;
+    }
+    .body g1 {
+        font-size: 10px;
+    }
+    .body g2 {
+        font-size: 10px;
+    }
+  }
 
 .menu a {
     color: var(--color-green);
@@ -49,14 +67,13 @@ body {
     color: var(--color-light-gray);
 }
 
-/* Body styles */
 .body {
-    font-family: terminal;
     font-size: 15px;
 }
 
 .body pre {
-    font-family: terminal;
+    font-family: 'Fira Code', monospace;
+    white-space: pre-wrap;
     color: var(--color-dark-green);
 }
 
@@ -80,7 +97,6 @@ body {
     font-size: 13px;
     text-align: center;
     padding: 2px 0;
-    font-family: terminal;
     color: var(--color-green);
     font-weight: bold;
 }
