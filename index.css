@@ -9,14 +9,15 @@
     font-family: 'Times New Roman', Times, serif;
 }
 
-.container {
-    padding: 0 300px;
-}
-
 body {
     color: var(--color-light-gray);
     background-color: var(--color-dark-background);
     margin: 50px 100px 0px 100px;
+    text-align: center;
+}
+
+.container {
+    padding: 0 300px;
 }
 
 .logo {
@@ -32,31 +33,6 @@ body {
     padding: 5px 0;
 }
 
-@media (max-width: 600px) {
-    body {
-      margin: 50px 10px 0px 10px;
-    }
-    .body pre {
-        font-size: 12px;
-    }
-    .container {
-      padding: 0 25px;
-    }
-    .logo {
-      font-size: 3px;
-    }
-    .menu {
-        font-size: 13px;
-        margin: 15px 0;
-    }
-    .body g1 {
-        font-size: 10px;
-    }
-    .body g2 {
-        font-size: 10px;
-    }
-  }
-
 .menu a {
     color: var(--color-green);
     font-weight: bold;
@@ -69,6 +45,9 @@ body {
 
 .body {
     font-size: 15px;
+    text-align: left;
+    margin: 0 auto;
+    max-width: 800px;
 }
 
 .body pre {
@@ -91,7 +70,6 @@ body {
     color: var(--color-green);
 }
 
-/* Footer styles */
 .footer {
     border-top: 2px dotted var(--color-dark-green);
     font-size: 13px;
@@ -99,4 +77,175 @@ body {
     padding: 2px 0;
     color: var(--color-green);
     font-weight: bold;
+}
+
+/* Small devices (portrait and landscape) */
+@media (max-width: 600px) {
+    body {
+        margin: 50px 10px 0px 10px;
+    }
+    .container {
+        padding: 0 25px;
+    }
+    .logo {
+        font-size: 5px;
+    }
+    .menu {
+        font-size: 13px;
+        margin: 15px 0;
+    }
+    .body {
+        font-size: 12px;
+    }
+    .body pre {
+        font-size: 12px;
+    }
+    .body g1 {
+        font-size: 10px;
+    }
+    .body g2 {
+        font-size: 10px;
+    }
+}
+
+/* Medium devices (portrait and landscape) */
+@media (min-width: 601px) and (max-width: 768px) {
+    body {
+        margin: 50px 20px 0px 20px;
+    }
+    .container {
+        padding: 0 50px;
+    }
+    .logo {
+        font-size: 6px;
+    }
+    .menu {
+        font-size: 14px;
+        margin: 20px 0;
+    }
+    .body {
+        font-size: 14px;
+    }
+    .body pre {
+        font-size: 13px;
+    }
+    .body g1 {
+        font-size: 12px;
+    }
+    .body g2 {
+        font-size: 12px;
+    }
+}
+
+/* Large devices (portrait and landscape) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        margin: 50px 30px 0px 30px;
+    }
+    .container {
+        padding: 0 100px;
+    }
+    .logo {
+        font-size: 8px;
+    }
+    .menu {
+        font-size: 14px;
+        margin: 25px 0;
+    }
+    .body {
+        font-size: 15px;
+    }
+    .body pre {
+        font-size: 14px;
+    }
+    .body g1 {
+        font-size: 13px;
+    }
+    .body g2 {
+        font-size: 13px;
+    }
+}
+
+/* Extra large devices (portrait and landscape) */
+@media (min-width: 1025px) {
+    body {
+        margin: 50px 100px 0px 100px;
+    }
+    .container {
+        padding: 0 300px;
+    }
+    .logo {
+        font-size: 9px;
+    }
+    .menu {
+        font-size: 14px;
+        margin: 30px 0;
+    }
+    .body {
+        font-size: 15px;
+    }
+    .body pre {
+        font-size: 15px;
+    }
+    .body g1 {
+        font-size: 14px;
+    }
+    .body g2 {
+        font-size: 14px;
+    }
+}
+
+/* Specific adjustments for common resolutions */
+@media (max-width: 360px) {
+    .logo {
+        font-size: 4px;
+    }
+    .menu {
+        font-size: 12px;
+    }
+    .body {
+        font-size: 11px;
+    }
+    .body pre {
+        font-size: 11px;
+    }
+    .body g1 {
+        font-size: 9px;
+    }
+    .body g2 {
+        font-size: 9px;
+    }
+}
+
+/* Adjustment for resolution 1080x810 */
+@media (max-width: 1080px) and (min-height: 810px) {
+    body {
+        margin: 50px 20px 0px 20px;
+    }
+    .container {
+        padding: 0 20px;
+    }
+    .body {
+        font-size: 15px;
+        max-width: none;
+    }
+    .body pre {
+        font-size: 14px;
+    }
+}
+
+/* Adjustment for resolution 1280x800 */
+@media (min-width: 1280px) and (max-width: 1440px) {
+    body {
+        margin: 50px 50px 0px 50px;
+    }
+    .container {
+        padding: 0 150px;
+    }
+    .body {
+        font-size: 16px;
+    }
+    .body pre {
+        font-size: 15px;
+    }
 }
